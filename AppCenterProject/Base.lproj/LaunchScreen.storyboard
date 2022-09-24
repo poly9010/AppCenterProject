@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3" userLabel="런치스크린">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ul2-s0-Puh" userLabel="인천대학교 로고">
+                                <rect key="frame" x="118" y="221.5" width="139" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ul2-s0-Puh" secondAttribute="height" multiplier="139:77" id="yz1-Z0-Ptf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="INCHEON NATIONAL UNIVERSITY-1" translatesAutoresizingMaskIntoConstraints="NO" id="q2t-g2-aZp" userLabel="인천대학교 레이블">
+                                <rect key="frame" x="60" y="327.5" width="255" height="12"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DORMITORY-1" translatesAutoresizingMaskIntoConstraints="NO" id="usi-e2-RvJ" userLabel="기숙사 레이블">
+                                <rect key="frame" x="138" y="342.5" width="96" height="12"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.011764705882352941" green="0.29019607843137252" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="usi-e2-RvJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="OJd-ME-kPr"/>
+                            <constraint firstItem="q2t-g2-aZp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Pjs-nf-XsK"/>
+                            <constraint firstItem="q2t-g2-aZp" firstAttribute="top" secondItem="Ul2-s0-Puh" secondAttribute="bottom" constant="29" id="RHc-A5-bJp"/>
+                            <constraint firstItem="usi-e2-RvJ" firstAttribute="top" secondItem="q2t-g2-aZp" secondAttribute="bottom" constant="3" id="SMe-iY-Xvc"/>
+                            <constraint firstItem="Ul2-s0-Puh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="TnV-Cm-gT4"/>
+                            <constraint firstItem="q2t-g2-aZp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="XZt-Yq-Nfb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q2t-g2-aZp" secondAttribute="trailing" constant="60" id="btf-zI-1fE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="usi-e2-RvJ" secondAttribute="trailing" constant="141" id="jEv-fr-c5U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ul2-s0-Puh" secondAttribute="trailing" constant="118" id="mOg-JM-DWN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DORMITORY-1" width="97" height="12"/>
+        <image name="Group-1" width="139" height="77.5"/>
+        <image name="INCHEON NATIONAL UNIVERSITY-1" width="255" height="12"/>
+    </resources>
+</document>
