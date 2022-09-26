@@ -25,14 +25,14 @@ class Tab1:UIViewController {
     @IBOutlet weak var infoCard: UIView?
 
 
-    
+    //첫번째 탭
     override func viewDidLoad() {
         print("첫번째 탭 입니다")
         super.viewDidLoad()
         loadWebPage("http://www.naver.com")
         self.tab1View?.layer.shadowColor = UIColor.gray.cgColor
         self.tab1View?.layer.shadowOffset = CGSize(width:0,height: 1)
-        self.tab1View?.layer.shadowRadius = 3.0
+        self.tab1View?.layer.shadowRadius = 4.0
         self.tab1View?.layer.shadowOpacity = 0.3
         print("tab1 ")
         
@@ -50,6 +50,7 @@ class Tab1:UIViewController {
     
     // 알림창 구현 함수입니다.(간단한 알림을 구현)
     func simpleAlert(title:String,message:String) {
+        
        let alert = UIAlertController(title:title,message: message,preferredStyle: .alert)
         let okAction = UIAlertAction(title:"확인",style:.default)
        let cancelAction = UIAlertAction(title:"취소",style:.cancel,handler: nil)
